@@ -1,0 +1,2 @@
+[cisco_devices]
+csr1 ansible_host=172.16.14.112 ansible_user=admin ansible_password=admin ansible_network_os=ios ansible_connection=network_cli ansible_python_interpreter=/home/skumar/stig/virtuall_env/bin/python

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cdf:TestResult xmlns:cdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_mil.disa.stig_testresult_scap_mil.disa_comp_files" end-time="2024-11-06T13:44:32">
+	<cdf:target>dev-machine</cdf:target>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215807r648759_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215813r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215814r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215815r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215816r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215817r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215820r531083_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215823r531083_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215825r802424_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215832r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215833r531083_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215836r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215840r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215844r802427_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215845r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-216675r531086_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-216700r531086_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-216726r531086_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-216727r531086_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-216996r663924_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-217001r531086_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215808r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215809r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215810r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215811r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215819r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215821r531083_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215822r531083_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215834r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215835r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215839r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215847r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215848r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215849r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215850r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-215852r531083_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-216647r531086_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:score maximum="37" system="urn:xccdf:scoring:flat-unweighted">8</cdf:score>
+</cdf:TestResult>
