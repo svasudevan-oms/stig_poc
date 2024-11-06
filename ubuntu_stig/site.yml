@@ -1,0 +1,12 @@
+- hosts: localhost
+  become: true
+  gather_facts: no
+  # roles:
+  #   - ubuntu2004STIG
+  tasks:
+      # - name: Print msg
+      #     debug: msg="Hello"
+    - name: Include role
+      import_role:
+        name: ubuntu2004STIG
+

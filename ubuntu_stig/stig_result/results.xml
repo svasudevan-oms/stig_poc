@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cdf:TestResult xmlns:cdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_mil.disa.stig_testresult_scap_mil.disa_comp_U_CAN_Ubuntu_20-04_LTS_STIG_V1R11_Manual-xccdf.xml" end-time="2024-11-05T15:15:34">
+	<cdf:target>dev-machine</cdf:target>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238200r653775_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238202r653781_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238203r653784_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238207r853404_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238209r653802_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238212r858521_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238213r858523_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238214r858525_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238215r916422_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238216r877465_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238217r877465_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238218r877377_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238219r858533_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238220r858535_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238221r653838_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238222r653841_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238223r653844_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238224r653847_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238225r832942_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238226r653853_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238227r653856_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238230r853410_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238231r853411_rule">
+		<cdf:result>fail</cdf:result>
+	</cdf:rule-result>
+	<cdf:score maximum="23" system="urn:xccdf:scoring:flat-unweighted">2</cdf:score>
+</cdf:TestResult>
