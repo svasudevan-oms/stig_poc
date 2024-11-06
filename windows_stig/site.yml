@@ -1,4 +1,8 @@
 - hosts: windows
+  # become: true
   gather_facts: no
-  roles:
-    - win2022STIG
+  tasks:
+    - name: Include role
+      import_role:
+        name: win2022STIG
+

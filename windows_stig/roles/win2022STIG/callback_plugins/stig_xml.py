@@ -1,6 +1,7 @@
 from __future__ import (absolute_import, division, print_function)
 __metaclass__ = type
-
+# export STIG_PATH=/home/nsimma/stig_poc/windows_stig/roles/win2022STIG/files/U_MS_Windows_Server_2022_STIG_V1R1_Manual-xccdf.xml
+# export XML_PATH=/home/nsimma/stig_poc/windows_stig/stig_results/results.xml
 from ansible.plugins.callback import CallbackBase
 from time import gmtime, strftime
 import platform
