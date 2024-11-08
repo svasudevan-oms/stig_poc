@@ -22,6 +22,7 @@
     section: org/gnome/login-screen
     option: banner-message-enable
     value: "{{ ubuntu2004STIG_stigrule_238197__etc_gdm3_greeter_dconf_defaults_enable_Value }}"
+    # value: "Hello"
     no_extra_spaces: yes
   notify: dconf_update
   when:
@@ -43,13 +44,15 @@
 - name: stigrule_238200_vlock
   apt:
     name: vlock
-    state: "{{ ubuntu2004STIG_stigrule_238200_vlock_State }}"
+    # state: "{{ ubuntu2004STIG_stigrule_238200_vlock_State }}"
+    state: "absent"
     update_cache: yes
   register: apt_status
   until: apt_status is success
   retries: 12
   delay: 10
   when: ubuntu2004STIG_stigrule_238200_Manage
+
 # R-238202 UBTU-20-010007
 - name: stigrule_238202__etc_login_defs
   lineinfile:

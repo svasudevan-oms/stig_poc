@@ -2,6 +2,8 @@ from __future__ import (absolute_import, division, print_function)
 __metaclass__ = type
 # export STIG_PATH=/home/svasudevan/stig_codes/roles/ubuntu2004STIG/files/U_CAN_Ubuntu_20-04_LTS_STIG_V1R11_Manual-xccdf.xml
 # export XML_PATH=/home/svasudevan/stig_codes/stig_result/results.xml
+STIG_PATH="./roles/ubuntu2004STIG/files/U_CAN_Ubuntu_20-04_LTS_STIG_V1R11_Manual-xccdf.xml"
+XML_PATH="./stig_result/result.xml"
 from ansible.plugins.callback import CallbackBase
 from time import gmtime, strftime
 import platform
