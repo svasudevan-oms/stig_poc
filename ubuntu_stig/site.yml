@@ -5,19 +5,16 @@
   roles:
     - ubuntu2004STIG
   tasks:
-    - debug: msg="Hello"
-
-# ---
-# - hosts: localhost
-#   gather_facts: no
-#   tasks:
+    - debug: msg="Stig Check Completed"
+    - pause:
+        seconds: 5
     - name: Get current date and time
       set_fact:
         current_datetime: "{{ lookup('pipe', 'TZ=America/Chicago date +\"%Y-%m-%d_%H%M%S\"') }}"
 
     - name: Generate HTML report from XML
       convert_xml_to_html:
-        xml_file_path: "/home/svasudevan/oms_gh_code/stig_poc/ubuntu_stig/stig_result/results.xml"
-        html_file_path: "/home/svasudevan/oms_gh_code/stig_poc/ubuntu_stig/stig_result/{{ current_datetime }}_ubuntu_stig_report.html"
+        xml_file_path: "./stig_result/results_new.xml"
+        html_file_path: "./stig_result/{{ current_datetime }}_ubuntu_stig_report.html"
       become: false
 
