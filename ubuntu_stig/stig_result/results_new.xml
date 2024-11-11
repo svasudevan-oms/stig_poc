@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<cdf:TestResult xmlns:cdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_mil.disa.stig_testresult_scap_mil.disa_comp_U_CAN_Ubuntu_20-04_LTS_STIG_V1R11_Manual-xccdf.xml" end-time="2024-11-08T08:37:39">
+<cdf:TestResult xmlns:cdf="http://checklists.nist.gov/xccdf/1.2" id="xccdf_mil.disa.stig_testresult_scap_mil.disa_comp_U_CAN_Ubuntu_20-04_LTS_STIG_V1R11_Manual-xccdf.xml" end-time="2024-11-11T12:37:43">
 	<cdf:target>dev-machine</cdf:target>
 	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238200r653775_rule">
 		<cdf:result>pass</cdf:result>
 	</cdf:rule-result>
-	<cdf:score maximum="1" system="urn:xccdf:scoring:flat-unweighted">1</cdf:score>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238202r653781_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238203r653784_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238207r853404_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238209r653802_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238212r858521_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:rule-result idref="xccdf_mil.disa.stig_rule_SV-238213r858523_rule">
+		<cdf:result>pass</cdf:result>
+	</cdf:rule-result>
+	<cdf:score maximum="7" system="urn:xccdf:scoring:flat-unweighted">7</cdf:score>
 </cdf:TestResult>

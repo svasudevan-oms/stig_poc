@@ -1,13 +1,26 @@
 ---
-- hosts: localhost
+- name: Create Report
+  hosts: localhost
   gather_facts: no
   become: true
   roles:
     - ubuntu2004STIG
   tasks:
+    # Run DoD STIG Check task
+    # - name: Include role
+    #   include_role: 
+    #     name: ubuntu2004STIG
     - debug: msg="Stig Check Completed"
+
+    # Add delay for callback plugin to generate file
     - pause:
         seconds: 5
+
+# Added new Play for file conversion
+- name: Convert to html
+  hosts: localhost
+  gather_facts: no
+  tasks:
     - name: Get current date and time
       set_fact:
         current_datetime: "{{ lookup('pipe', 'TZ=America/Chicago date +\"%Y-%m-%d_%H%M%S\"') }}"
@@ -17,4 +30,5 @@
         xml_file_path: "./stig_result/results_new.xml"
         html_file_path: "./stig_result/{{ current_datetime }}_ubuntu_stig_report.html"
       become: false
+      check_mode: no
 

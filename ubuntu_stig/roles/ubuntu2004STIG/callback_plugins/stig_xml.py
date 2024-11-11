@@ -1,9 +1,6 @@
 from __future__ import (absolute_import, division, print_function)
 __metaclass__ = type
-# export STIG_PATH=/home/svasudevan/oms_gh_code/stig_poc/ubuntu_stig/roles/ubuntu2004STIG/files/U_CAN_Ubuntu_20-04_LTS_STIG_V1R11_Manual-xccdf.xml
-# export XML_PATH=/home/svasudevan/oms_gh_code/stig_poc/ubuntu_stig/stig_result/results_new.xml
-# STIG_PATH="../roles/ubuntu2004STIG/files/U_CAN_Ubuntu_20-04_LTS_STIG_V1R11_Manual-xccdf.xml"
-# XML_PATH="../../stig_result/result.xml"
+
 from ansible.plugins.callback import CallbackBase
 from time import gmtime, strftime
 import platform
@@ -32,7 +29,6 @@ class CallbackModule(CallbackBase):
         self.rules = {}
         self.stig_path = os.environ.get('STIG_PATH')
         self.XML_path = os.environ.get('XML_PATH')
-
         if self.stig_path is None:
             self.stig_path = self._get_STIG_path()
         self._display.display('Using STIG_PATH: {}'.format(self.stig_path))

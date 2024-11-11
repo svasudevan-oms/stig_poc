@@ -1,0 +1,35 @@
+---
+- name: Wazuh API demo
+  hosts: localhost
+  gather_facts: False
+  tasks:
+    - name: Authenticate with Wazuh API
+      ansible.builtin.uri:
+        url: "https://172.16.14.40:55000/security/user/authenticate"
+        method: POST
+        user: "wazuh-wui"
+        password: "UvWKHljW*uLUnBVSi+a+Tv3GgX03ip9Z"
+        force_basic_auth: yes
+        validate_certs: no
+      register: auth_response
+
+    - name: Print authentication response
+      ansible.builtin.debug:
+        var: auth_response.json
+
+    - name: Extract authentication token
+      set_fact:
+        auth_token: "{{ auth_response.json.data.token }}"
+
+    - name: Get agent details from Wazuh
+      ansible.builtin.uri:
+        url: "https://172.16.14.40:55000/agents"
+        method: GET
+        headers:
+          Authorization: "Bearer {{ auth_token }}"
+        validate_certs: no
+      register: agent_details
+
+    - name: Print agent details
+      ansible.builtin.debug:
+        var: agent_details.json

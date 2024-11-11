@@ -52,3 +52,59 @@
   retries: 12
   delay: 10
   when: ubuntu2004STIG_stigrule_238200_Manage
+
+# R-238202 UBTU-20-010007
+- name: stigrule_238202__etc_login_defs
+  lineinfile:
+    path: /etc/login.defs
+    regexp: '^PASS_MIN_DAYS'
+    line: "{{ ubuntu2004STIG_stigrule_238202__etc_login_defs_Line }}"
+    create: yes
+  when:
+    - ubuntu2004STIG_stigrule_238202_Manage
+# R-238203 UBTU-20-010008
+- name: stigrule_238203__etc_login_defs
+  lineinfile:
+    path: /etc/login.defs
+    regexp: '^PASS_MAX_DAYS'
+    line: "{{ ubuntu2004STIG_stigrule_238203__etc_login_defs_Line }}"
+    create: yes
+  when:
+    - ubuntu2004STIG_stigrule_238203_Manage
+# R-238207 UBTU-20-010013
+- name: stigrule_238207__etc_profile_d_99_terminal_tmout_sh
+  copy:
+    dest: "{{ ubuntu2004STIG_stigrule_238207__etc_profile_d_99_terminal_tmout_sh_Dest }}"
+    content: "{{ ubuntu2004STIG_stigrule_238207__etc_profile_d_99_terminal_tmout_sh_Content }}"
+  when:
+    - ubuntu2004STIG_stigrule_238207_Manage
+# R-238209 UBTU-20-010016
+- name: stigrule_238209__etc_login_defs
+  lineinfile:
+    path: /etc/login.defs
+    regexp: '^UMASK'
+    line: "{{ ubuntu2004STIG_stigrule_238209__etc_login_defs_Line }}"
+    create: yes
+  when:
+    - ubuntu2004STIG_stigrule_238209_Manage
+# R-238212 UBTU-20-010036
+- name: stigrule_238212_ClientAliveCountMax
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    regexp: '(?i)^\s*ClientAliveCountMax\s+'
+    line: "{{ ubuntu2004STIG_stigrule_238212_ClientAliveCountMax_Line }}"
+  notify: ssh_restart
+  when:
+    - ubuntu2004STIG_stigrule_238212_Manage
+    - "'openssh-server' in packages"
+# R-238213 UBTU-20-010037
+- name: stigrule_238213_ClientAliveInterval
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    regexp: '(?i)^\s*ClientAliveInterval\s+'
+    line: "{{ ubuntu2004STIG_stigrule_238213_ClientAliveInterval_Line }}"
+  notify: ssh_restart
+  when:
+    - ubuntu2004STIG_stigrule_238213_Manage
+    - "'openssh-server' in packages"
+# R-238214 UBTU-20-010038
