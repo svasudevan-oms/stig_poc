@@ -32,4 +32,13 @@
 
     - name: Print agent details
       ansible.builtin.debug:
-        var: agent_details.json
+        var: agent_details
+
+    - name: Get current date and time
+      set_fact:
+        current_datetime: "{{ lookup('pipe', 'TZ=America/Chicago date +\"%Y-%m-%d_%H%M%S\"') }}"
+
+    - name: Save JSON content to file
+      copy:
+        content: "{{ agent_details | to_nice_json }}"
+        dest: "wazuh_api_result/wazuh_agent_list_{{ current_datetime }}.json"

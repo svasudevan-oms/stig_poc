@@ -45,14 +45,14 @@
   apt:
     name: vlock
     # state: "{{ ubuntu2004STIG_stigrule_238200_vlock_State }}"
-    state: "absent"
+    state: "present"
     update_cache: yes
   register: apt_status
   until: apt_status is success
   retries: 12
   delay: 10
   when: ubuntu2004STIG_stigrule_238200_Manage
-
+- meta: end_play
 # R-238202 UBTU-20-010007
 - name: stigrule_238202__etc_login_defs
   lineinfile:
