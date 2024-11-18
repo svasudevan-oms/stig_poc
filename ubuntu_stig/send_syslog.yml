@@ -1,0 +1,18 @@
+---
+- name: Wazuh API demo
+  hosts: localhost
+  gather_facts: False
+  vars:
+    device_ip: "1.1.1.1"
+    rule_id: "12345678"
+    result: "pass"
+  tasks:
+  # - name: Send syslog message to Wazuh server
+  #   ansible.builtin.shell: >
+  #     logger -n 172.16.14.111 -P 514
+  #     "2021/10/05 10:30:21 INFO: wazuh 127.0.0.1 \"PUT /agents/group\" with parameters {\"device\": \"1.1.1.1\", \"stigid\": \"3322\", \"status\": \"pass\"} and body {} done in 0.075s: 200"
+
+    - name: Send syslog message with current timestamp
+      ansible.builtin.shell: >
+        logger -n 172.16.14.111 -P 514
+        "$(date '+%Y/%m/%d %H:%M:%S') INFO: wazuh 127.0.0.1 \"PUT /agents/group\" with parameters {\"device_ip\": \"{{ device_ip }}\", \"rule_id\": \"{{ rule_id }}\", \"result\": \"{{ result }}\"} and body {} done in 0.075s: 200"

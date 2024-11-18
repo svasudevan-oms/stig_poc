@@ -1,0 +1,19 @@
+- name: Parse XML and extract rule results
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Parse the XML file
+      parse_xml_new:
+        xml_file: "/home/svasudevan/oms_gh_code/stig_poc/ubuntu_stig/stig_result/results_new1.xml"
+        device_ip: "1.1.1.1"
+      register: result
+
+    - name: Display extracted rules
+      debug:
+        var: result.rule_results
+
+    - name: Send syslog message with current timestamp for each rule result
+      ansible.builtin.shell: >
+        logger -n 172.16.14.111 -P 514
+        "$(date '+%Y/%m/%d %H:%M:%S') INFO: wazuh 127.0.0.1 \"PUT /agents/group\" with parameters {\"device_ip\": \"{{ item.device_ip }}\", \"rule_id\": \"{{ item.rule_id }}\", \"result\": \"{{ item.result }}\"} and body {} done in 0.075s: 200"
+      with_items: "{{ result.rule_results }}"
